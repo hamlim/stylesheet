@@ -1,9 +1,9 @@
 import { last, sheetForTag, makeStyleTag } from './utils'
 
-const process = typeof process !== 'undefined' ? process : { env: { NODE_ENV: 'production' } }
-
-const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
 const isBrowser = typeof window !== undefined
+const isDev = isBrowser
+  ? window.Stylesheet ? window.Stylesheet.isDev : false
+  : process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
 const isTest = process.env.NODE_ENV === 'test'
 
 const oldIE = (() => {
