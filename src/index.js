@@ -1,12 +1,6 @@
 import { last, sheetForTag, makeStyleTag } from './utils'
 
-if (typeof process === 'undefined') {
-  process = {
-    env: {
-      NODE_ENV: 'production',
-    },
-  }
-}
+const process = typeof process !== 'undefined' ? process : { env: { NODE_ENV: 'production' } }
 
 const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV
 const isBrowser = typeof window !== undefined
