@@ -1,6 +1,6 @@
 import { last, sheetForTag, makeStyleTag } from './utils'
 
-if (typeof process === undefined) {
+if (typeof process === 'undefined') {
   process = {
     env: {
       NODE_ENV: 'production',
