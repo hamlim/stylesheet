@@ -5,7 +5,7 @@ const inputOpts = {
 }
 
 const outputOpts = {
-  file: 'dist/bundle.js',
+  file: 'dist/index.js',
   format: 'es',
 }
 

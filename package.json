@@ -1,7 +1,7 @@
 {
-  "name": "stylesheet",
+  "name": "style-sheet",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
   "license": "MIT",
   "dependencies": {
@@ -12,5 +12,5 @@
   "scripts": {
     "build": "rm -r dist/ && node build.js"
   },
-  "module": "dist/bundle.js"
+  "module": "dist/index.js"
 }
