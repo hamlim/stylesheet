@@ -7,7 +7,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
-    "rollup": "^2.79.2"
+    "rollup": "^2.80.0"
   },
   "scripts": {
     "build": "rm -r dist/ && node build.js"
